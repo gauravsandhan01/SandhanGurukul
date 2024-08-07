@@ -1,0 +1,37 @@
+  .slides h1{
+  
+    color: #090909;
+    font-size: 55px;
+    text-align: center;
+    margin-top: 35px;
+  }
+.slide1 img{
+    margin: auto;
+    margin-left: 150px;
+    margin-right: 30px;
+    border-radius: 20px;
+    box-shadow: 20px 20px 60px rgba(0,0,0,1);
+    height: 500px;
+    width: 500px;
+  
+  }
+  
+.slide2 img{
+    margin: auto;
+    margin-left: 700px;
+    margin-right: 30px;
+    border-radius: 20px;
+    box-shadow: 20px 20px 60px rgba(0,0,0,1);
+    height: 500px;
+    width: 500px;
+    margin-top: 20px;
+  }
+  
+  
+  
+   
+    @media screen and (max-width: 768px) {
+      .slide img {
+        max-width: 100%;
+      }
+    }

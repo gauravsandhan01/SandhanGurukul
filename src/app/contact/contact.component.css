@@ -1,0 +1,94 @@
+.form {
+    background-color: #e4dde760;
+    border-radius: 20px;
+     height: 500px;
+    padding: 20px;
+    backdrop-filter: blur(20px);    
+  }
+  
+  .title {
+    color: #191717;
+    font-family: sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 30px;
+  }
+ 
+  
+  .form-control-container {
+    height: 70px;
+   
+    width: 100%;
+  }
+  
+  .ic1 {
+    margin-top: 30px;
+    margin-left: 350px;
+    margin-right: 350px;
+    
+  }
+  
+  .form-control {
+    background-color: #3c3d3f;
+    border-radius: 12px;
+    box-sizing: border-box;
+    font-size: 18px;
+    height: 40px;
+   padding: 4px 20px 0;
+    width: 100%;
+  }
+  
+  
+  .form-control:focus ~ .cut,
+  .form-control:not(:placeholder-shown) ~ .cut {
+    transform: translateY(8px);
+  }
+  
+  .placeholder {
+    color: transparent;
+    font-family: sans-serif;
+    left: 20px;
+    line-height: 14px;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: 0 50%;
+    transition: transform 200ms, color 200ms;
+    top: 20px;
+  }
+  
+  .form-control:focus ~ .placeholder,
+  .form-control:not(:placeholder-shown) ~ .placeholder {
+    transform: translateY(-30px) translateX(10px) scale(0.75);
+  }
+  
+  .form-control:not(:placeholder-shown) ~ .placeholder {
+    color: #808097;
+  }
+  
+  .form-control:focus ~ .placeholder {
+    font-weight: bold;
+    font-size: large;
+    color: #dc2f55;
+    background-color: rgba(255, 162, 0, 0.214);
+    border-radius: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .submit {
+    background-color: rgb(207, 98, 203);
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    cursor: pointer;
+    font-size: 18px;
+    height: 30px;
+    margin-top: 38px;
+    margin-left: 300px;
+    margin-right: 300px;
+    width: 150px;
+    margin-bottom: 30px;
+    text-align: center;
+   
+  }
+  

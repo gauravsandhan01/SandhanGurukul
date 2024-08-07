@@ -1,0 +1,77 @@
+
+
+.title h1{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 42px;
+   
+}
+.title h1::after{
+    height: 4px;
+    width: 230px;
+    background-color: #88b0b0;
+    display: block;
+    margin: auto;
+}
+
+.services{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 75px auto;
+    text-align: center;
+    border-radius: 15px;
+    min-height: 50vh;
+    background: #e4e3ea;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 100%;
+    
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 20px;
+    padding: 20px 20px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,1);
+    background: rgba(89, 146, 138, 0.744);
+    backdrop-filter: blur(50px);
+    border-radius: 10px;
+  
+    
+}
+
+.card:hover{
+    background-color: #a3bcc5;
+    transition: 0.4s ease;
+}
+
+.card h2{
+    font-size: 28px;
+    color: #c94f4f;
+    margin-bottom: 20px;
+
+}
+.card p{
+    font-size: 21px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    color: #050505;
+
+}
+.button{
+    font-size: 15px;
+    color: #fff;
+    background-color: #2c677c;
+    padding: 8px 12px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+.button:hover{
+    background-color: #c94f4f;
+    transition: 0.4s ease;
+}
+

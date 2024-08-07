@@ -1,0 +1,67 @@
+
+
+<form [formGroup]="Form" style="justify-content: center; text-align: center;" (submit) = "send()">
+  
+    <div class="form">
+        <div class="title"  id = "CONTACT">
+          <h1>Contact Us</h1>
+        </div>
+    
+        
+        
+        <div class="input-container ic1">
+            <div class="Form-Group">
+                <input [class.is-invalid]="Form.get('first_name')?.invalid" type="text" class="form-control" formControlName="first_name" placeholder="Enter Your First Name">
+                <div class="cut"></div>
+                <label for="first_name" class="placeholder">first_name</label>
+                <div *ngIf="Form.get('first_name')?.invalid && Form.get('first_name')?.touched" class="error-message" style="color: red;">Please enter a valid username .</div>
+            </div>
+        </div>
+  
+        <div class="input-container ic1">
+          <div class="Form-Group">
+              <input [class.is-invalid]="Form.get('last_name')?.invalid" type="text" class="form-control" formControlName="last_name" placeholder="Enter Your Last Name">
+              <div class="cut"></div>
+              <label for="last_name" class="placeholder">last_name</label>
+              <div *ngIf="Form.get('last_name')?.invalid && Form.get('last_name')?.touched" class="error-message" style="color: red;">Please enter a valid username .</div>
+          </div>
+        </div>
+  
+        <div class="input-container ic1">
+            <div class="Form-Group">
+                <input [class.is-invalid]="Form.get('from_email')?.invalid" type="email" class="form-control" formControlName="from_email" placeholder="Enter Your Email">
+                <div class="cut cut-short"></div>
+                <label for="from_email" class="placeholder">Email</label>
+                <div *ngIf="Form.get('from_email')?.invalid && Form.get('from_email')?.touched" class="error-message"style="color: red;">Please enter a valid email address.</div>
+            </div>
+        </div>
+        
+        <div class="input-container ic1">
+            <div class="Form-Group">
+                <input [class.is-invalid]="Form.get('Mobile')?.invalid" type="text" class="form-control" formControlName="Mobile" placeholder="Enter Mobile no">
+                <div class="cut cut-short"></div>
+                <label for="Mobile" class="placeholder">Mobile</label>
+                <div *ngIf="Form.get('Mobile')?.invalid && Form.get('Mobile')?.touched" class="error-message" style="color: red;">Mobile is required. ( Enter 10  digit only)</div>
+            </div>
+        </div>
+        
+        <div class="input-container ic1">
+          <div class="Form-Group">
+              <input [class.is-invalid]="Form.get('message')?.invalid" type="text" class="form-control" formControlName="message" placeholder="Enter Message">
+              <div class="cut cut-short"></div>
+              <label for="message" class="placeholder">message</label>
+              <div *ngIf="Form.get('message')?.invalid && Form.get('message')?.touched" class="error-message" style="color: red;">message is required.</div>
+          </div>
+        </div>
+        
+        <div>
+            <button type="submit" class="submit" >Submit</button>
+        </div>
+      
+  
+    </div>
+  
+  </form>
+  
+  
+  
